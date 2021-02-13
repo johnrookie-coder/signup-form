@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+.wrapper::before {
+  content: "";
+  background-color: #ff7a7a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper > * {
+  position: relative;
+  z-index: 10;
+}
+
+.wrapper .container {
+  background: url("../images/bg-intro-desktop.png") no-repeat center center/cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .container .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+  letter-spacing: 2px;
+}
+
+.wrapper .container .contents .row {
+  color: #fff;
+  width: 95%;
+}
+
+.wrapper .container .contents .row h1 {
+  font-size: 2.9rem;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.wrapper .container .contents .row p {
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: inherit;
+  font-weight: 300;
+}
+
+.wrapper .container .contents .row .try {
+  background-color: #6055a5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  width: 95%;
+}
+
+.wrapper .container .contents form {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+  color: #b2b2b2;
+  max-height: auto;
+  max-width: 95%;
+}
+
+.wrapper .container .contents form .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.2rem;
+  margin-top: 20px;
+}
+
+.wrapper .container .contents form .form-container .inputs {
+  position: relative;
+  margin-top: 16px;
+  width: 90%;
+}
+
+.wrapper .container .contents form .form-container .inputs input,
+.wrapper .container .contents form .form-container .inputs button {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.wrapper .container .contents form .form-container .inputs input::-webkit-input-placeholder,
+.wrapper .container .contents form .form-container .inputs button::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.wrapper .container .contents form .form-container .inputs input:-ms-input-placeholder,
+.wrapper .container .contents form .form-container .inputs button:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.wrapper .container .contents form .form-container .inputs input::-ms-input-placeholder,
+.wrapper .container .contents form .form-container .inputs button::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.wrapper .container .contents form .form-container .inputs input::placeholder,
+.wrapper .container .contents form .form-container .inputs button::placeholder {
+  font-size: 1rem;
+}
+
+.wrapper .container .contents form .form-container .inputs input:focus,
+.wrapper .container .contents form .form-container .inputs button:focus {
+  border: 2px solid #6055a5;
+}
+
+.wrapper .container .contents form .form-container .inputs input:focus + label,
+.wrapper .container .contents form .form-container .inputs button:focus + label {
+  display: none;
+}
+
+.wrapper .container .contents form .form-container .inputs label {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #666666;
+}
+
+.wrapper .container .contents form .form-container .inputs button {
+  border: none;
+  background-color: #38cc8c;
+  -webkit-box-shadow: 0 5px #4e8c6e;
+          box-shadow: 0 5px #4e8c6e;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.wrapper .container .contents form .form-container .inputs button:focus {
+  border: none;
+}
+
+.wrapper .container .contents form .form-container .inputs.error .error-msg {
+  color: #ff7a7a;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: right;
+}
+
+.wrapper .container .contents form .form-container .inputs.error .icon-error {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.wrapper .container .contents form .form-container .inputs.error input {
+  border: 2px solid #ff7a7a;
+}
+
+.wrapper .container .contents form .form-container .inputs.error label {
+  display: none;
+}
+
+.wrapper .container .contents form .form-container .inputs .icon-error {
+  display: none;
+}
+
+.wrapper .container .contents form .form-container p {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.wrapper .container .contents form .form-container p span {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */
